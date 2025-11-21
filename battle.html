@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batalha de Filmes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🎬 Batalha de Filmes 🎬</h1>
+        <p>Clique no seu filme favorito para votar!</p>
+    </header>
+
+    <main>
+        <div id="loader"></div>
+
+        <div class="battle-container" id="battle-container" style="display: none;">
+            <div class="movie-card" id="movie-1">
+                <img src="" alt="Pôster do Filme 1">
+                <h3></h3>
+            </div>
+
+            <div class="vs-text">VS</div>
+
+            <div class="movie-card" id="movie-2">
+                <img src="" alt="Pôster do Filme 2">
+                <h3></h3>
+            </div>
+        </div>
+
+        <div class="winner-announcement" id="winner-announcement" style="display: none;">
+            <h2>🏆 O Grande Vencedor! 🏆</h2>
+            <div class="movie-card" id="winner-card"></div>
+            <button id="reload-button">Nova Batalha</button>
+
+            <div class="share-container">
+                <p>Compartilhe o campeão:</p>
+                <div class="share-buttons">
+                    <a id="share-twitter" class="share-button" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    <a id="share-facebook" class="share-button" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a id="share-whatsapp" class="share-button" target="_blank" rel="noopener noreferrer" data-action="share/whatsapp/share">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
